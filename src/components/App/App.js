@@ -1,4 +1,5 @@
 import React from 'react';
+import { observer } from 'mobx-react';
 
 class App extends React.Component {
     render() {
@@ -10,4 +11,4 @@ class App extends React.Component {
     }
 }
 
-export default App;
+export default observer(App);

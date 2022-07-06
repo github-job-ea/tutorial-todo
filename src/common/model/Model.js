@@ -1,4 +1,4 @@
-import { makeObservable, action, computed, observable } from "mobx";
+import { makeObservable, action, observable } from "mobx";
 
 class Model {
     props = ['id'];
@@ -11,8 +11,7 @@ class Model {
             props: observable,
             model: observable,
             setProps: action,
-            setModel: action,
-            getModel: computed
+            setModel: action
         });
     }
 
